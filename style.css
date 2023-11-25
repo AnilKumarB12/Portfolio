@@ -55,7 +55,7 @@ nav ul li a::after{
     transition: 0.5s
 }
 nav ul li a.clicked{
-    color: #870cc4;
+    color: #8c7995;
 }
 nav ul li a:hover::after{
     width: 100%;
@@ -329,13 +329,17 @@ nav .fa-solid{
     }
     .header-text{
         margin-top: 90%;
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 600;
         padding-left: 10px;
     }
     .social-icons{
         align-items: center;
-        padding-left: 10px;
+        padding-left: 8px;
+    }
+    .social-icons a{
+        font-size: 20px;
+        margin-right: 30px;
     }
     .header-text h1{
         font-size: 40px;
@@ -421,10 +425,10 @@ nav ul li a{
 @media only screen and (max-width:500px){
     .header-text{
         margin-top: 120%;
-        font-size: 20px;
+        font-size: 18px;
     }
     .header-text h1{
-        font-size: 50px;
+        font-size: 40px;
     }
     
 }
