@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0572867017.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Web Development.png" alt='' class="logo">
+                <ul id="sidemenu">
+                    <li><a class="nav-link  clicked" href="#header" onclick="changeLinkColor(this)">Home</a></li>
+                    <li><a class="nav-link" href="#about" onclick="changeLinkColor(this)">About</a></li>
+                    <li><a class="nav-link" href="#services" onclick="changeLinkColor(this)">Services</a></li>
+                    <li><a class="nav-link" href="#Portfolio" onclick="changeLinkColor(this)">Portfolio</a></li>
+                    <li><a class="nav-link" href="#contact" onclick="changeLinkColor(this)">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Hello, It's Me</p>
+                <h1><span>Anil</span> Kumar B</h1>
+                <h3>And I'm a <span class="dept">FrontEnd Developer</span></h3>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/feed/" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://github.com/AnilKumarB12" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+<!-- ----------------------------------------------------------About---------------------------------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/mb.jpg" alt="abt1">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello! I'm Anil Kumar B, a passionate FrontEnd Web Developer based in Davangere.
+                    I have always had a deep love for web development and have been dedicated to it for a year. 
+                    My journey has taken me through various experiences and learning opportunities, 
+                    which have shaped me into the person I am today.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>FrontEnd Technologies</span><br>HTML, CSS, JavaScript</li>
+                            <li><span>Library/Frameworks</span><br>Bootstrap, React</li>
+                            <li><span>BackEnd Technologies</span><br>Python, Basic Java</li>
+                            <li><span>Database</span><br>MySql</li>
+                            <li><span>Version Control</span><br>Git, GitHub</li>
+                            <li><span>Additional skills</span><br>Cucumber, Selenium, REST APIs, Postman</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Feb-May 2023</span><br>Internship at Ellucian as R&D Engineer<br><br>Writing 
+                                Automated test Cases for APIs (Automation Testing)<br><span>API Automation Testing
+                                (Cucumber, Selenium, REST APIs, Test NG. Postman)</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2015-2017</span><br>Secondary Education:
+                                Rural High School Kerebilachi:<br>10th Std : 80.96%</li>
+                            <li><span>2017-2019</span><br>SPSS PU Science College:<br>
+                                2nd PU : 89.83%</li>
+                            <li><span>2019-2023</span><br>University Visvesvaraya College Of Engineering
+                                (Bangalore University): Electrical and Electronics Engineering<BR>
+                                B-Tech : 8.5</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!---------------------------------------------------------Services--------------------------------------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>I have always had a deep love for web development
+                        <br>and have been dedicated to it for a year
+                        I have always had a deep love for Photography
+                        I have always had a deep love for Photography.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-camera"></i>
+                    <h2>Photography</h2>
+                    <p>I have always had a deep love for Photography.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    <h2>Video Editing</h2>
+                    <p>I have always had a deep love for Video Editing.
+                        I have always had a deep love for Photography
+                        I have always had a deep love for Photography.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------------------------------------------------Portfolio--------------------------------------------------------->
+    <div id="Portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="work1">
+                    <div class="layer">
+                        <h3>Restaurant Website</h3>
+                        <p>The website will serve as a digital representation of our restaurant, providing visitors with essential information, 
+                            enticing visuals, and convenient features.
+                            </p>
+                            <br>
+                            <ul class="tech-stack">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>Bootstrap</li>
+                            </ul>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #454242;"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="work1">
+                    <div class="layer">
+                        <h3>Travel Guide</h3>
+                        <p>Website which gives suggestions to the travelers and help them in visiting the best places based on their interest.
+                        </p>
+                        <br>
+                            <ul class="tech-stack">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                            </ul>
+                        <a href="https://travel-guide.w3spaces.com/"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #454242;"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="work1">
+                    <div class="layer">
+                        <h3>Portfolio Website</h3>
+                        <p> The website serves as a digital resume and portfolio, allowing visitors to gain insights into the creator's expertise, 
+                            projects, and achievements.</p>
+                            <br>
+                            <ul class="tech-stack">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                            </ul>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #454242;"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+<!-------------------------------------------------------------Contact--------------------------------------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-paper-plane"></i> anilkumarb1210@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 9986663265</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/feed/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.linkedin.com/feed/" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+                <a href="images/ANIL KUMAR B_Updated.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="text" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="event.js"></script>
+</body>
+</html>
