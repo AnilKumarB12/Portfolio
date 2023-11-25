@@ -320,7 +320,7 @@ nav .fa-solid{
 }
 @media only screen and (max-width:650px){
     #header{
-        background-image: url(images/mb1.jpg);
+        background-image: url("images/mobileBackground.png");
         height: 100vh;
     }
     .logo{
@@ -424,7 +424,7 @@ nav ul li a{
 }
 @media only screen and (max-width:500px){
     .header-text{
-        margin-top: 120%;
+        margin-top: 130%;
         font-size: 18px;
     }
     .header-text h1{
