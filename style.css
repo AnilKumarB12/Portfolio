@@ -14,9 +14,11 @@ body {
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(images/XtNPAM.jpg);
+    background-color: #000000;
+    background-image: url(images/wallback.jpg);
     background-size: cover;
-    background-position: center; 
+    background-position: center;
+    background-repeat: no-repeat;  
 }
 .container{
     padding: 5px 20px;
@@ -58,12 +60,9 @@ nav ul li a.clicked{
 nav ul li a:hover::after{
     width: 100%;
 }
-
 .header-text{
-    margin-top: 12%;
+    margin-top: 15%;
     font-size: 30px;
-    margin-bottom: 10px;
-
 }
 .header-text h1{
     font-size: 60px;
@@ -76,7 +75,7 @@ nav ul li a:hover::after{
 /*-------------------------------------------------------about---------------------------------------------------*/
 
 #about{
-    padding:20px 0;
+    padding:10px 0;
     margin-top: 40px;
     margin-bottom: 10px;
     color: #ababab;
@@ -91,7 +90,6 @@ nav ul li a:hover::after{
 }
 .about-col-1 img{
     width: 100%;
-    height: 100%;
     border-radius: 15px;
 }
 .about-col-2{
@@ -166,7 +164,7 @@ nav ul li a:hover::after{
     margin-bottom: 30px;
 }
 .services-list div h2{
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 500;
     margin-bottom: 15px;
 }
@@ -189,7 +187,7 @@ nav ul li a:hover::after{
 
 .work-list{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
     grid-gap:40px;
     margin-top: 40px;
 }
@@ -200,6 +198,7 @@ nav ul li a:hover::after{
 }
 .work img{
     width: 100%;
+    height: 100%;
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
@@ -319,9 +318,9 @@ form .btn2{
 nav .fa-solid{
     display: none;
 }
-@media only screen and (max-width:600px){
+@media only screen and (max-width:650px){
     #header{
-        background-image: url(images/mb.jpg);
+        background-image: url(images/mb1.jpg);
         height: 100vh;
     }
     .logo{
@@ -329,12 +328,19 @@ nav .fa-solid{
         width: 40%;
     }
     .header-text{
-        margin-top: 70%;
+        margin-top: 90%;
         font-size: 20px;
+        font-weight: 600;
+        padding-left: 10px;
+    }
+    .social-icons{
+        align-items: center;
+        padding-left: 10px;
     }
     .header-text h1{
-        font-size: 30px;
+        font-size: 40px;
     }
+    
     nav .fa-solid{
         display: block;
         font-size: 25px;
@@ -394,4 +400,32 @@ nav .fa-solid{
 .about-col-1{
     margin-bottom: 30px;
 }
+nav ul li a{
+    font-size: 15px ;
 }
+
+.header-text h1{
+    font-size: 50px;
+}
+.header-text{
+    margin-top: 70%;
+}
+
+}
+@media only screen and (max-width:800px){
+    .header-text{
+        margin-top: 90%;
+    }
+    
+}
+@media only screen and (max-width:500px){
+    .header-text{
+        margin-top: 120%;
+        font-size: 20px;
+    }
+    .header-text h1{
+        font-size: 50px;
+    }
+    
+}
+
