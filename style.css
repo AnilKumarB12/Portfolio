@@ -187,14 +187,18 @@ nav ul li a:hover::after{
 
 .work-list{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
     grid-gap:40px;
-    margin-top: 40px;
+    margin-top: 10px;
+    padding-left: 16px;
+    align-items: center;
 }
 .work{
     border-radius: 10px;
     position: relative;
     overflow: hidden ;
+    height: 90%;
+    width: 95%;
 }
 .work img{
     width: 100%;
@@ -248,7 +252,7 @@ nav ul li a:hover::after{
 }
 .btn{
     display: block;
-    margin: 40px auto;
+    margin: 10px auto 20px auto;
     width: fit-content;
     border: 1px solid #870cc4;
     padding: 14px 50px;

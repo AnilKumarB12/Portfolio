@@ -16,7 +16,8 @@
         "tablinks",
         "tabname",
         "UVCE",
-        "VISVESVARAYA"
+        "VISVESVARAYA",
+        "xmark"
     ],
     "liveServer.settings.port": 5501
 }
