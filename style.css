@@ -25,6 +25,9 @@ body {
 }
 nav {
     display: flex;
+/*  position: fixed;
+    z-index: 1000;
+    width: 93vw;   */
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -42,6 +45,7 @@ nav ul li a{
     color: #fff;
     text-decoration: none;
     font-size: 18px;
+    font-weight: 500;
     position: relative;
 }
 nav ul li a::after{
@@ -55,7 +59,7 @@ nav ul li a::after{
     transition: 0.5s
 }
 nav ul li a.clicked{
-    color: #8c7995;
+    color: rgb(250, 250, 250);
 }
 nav ul li a:hover::after{
     width: 100%;
@@ -329,7 +333,9 @@ nav .fa-solid{
     }
     .logo{
         height:auto;
-        width: 40%;
+        width: 35%;
+        padding-left: 0px;
+        margin-left: 0px;
     }
     .header-text{
         margin-top: 90%;
@@ -348,10 +354,15 @@ nav .fa-solid{
     .header-text h1{
         font-size: 40px;
     }
-    
+    nav {
+        position: fixed;
+        z-index: 1000;
+        width: 90vw; 
+    }
     nav .fa-solid{
         display: block;
-        font-size: 25px;
+        font-size: 20px;
+        padding-right: 5px;
     }
     nav ul{
         background: #870cc4;
@@ -428,7 +439,7 @@ nav ul li a{
 }
 @media only screen and (max-width:500px){
     .header-text{
-        margin-top: 130%;
+        margin-top: 145%;
         font-size: 18px;
     }
     .header-text h1{
